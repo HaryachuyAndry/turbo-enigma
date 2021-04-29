@@ -1,0 +1,89 @@
+@import "../styles/fonts.scss";
+
+.film-detail-container{
+    .film-detail-block{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 992px) { 
+            flex-direction: column;
+         }
+        .details-block{
+            display: flex;
+            flex-direction: column;
+            font-size: 17px;
+            margin:40px 0 40px 40px;
+            justify-content: space-around;
+            @include gilroy-semibold-font;
+            &>div{
+                margin-top: 20px;
+                @media (max-width: 576px) { 
+                    margin-top: 15px;
+                }
+            }
+            .details-block__title{
+                font-size: 60px;
+                font-weight: 600;
+                @media (max-width: 576px) { 
+                    font-size: 40px;
+                }
+            }
+            .details-block__runtime{
+                &>img{
+                    height: 13px;
+                }
+            }
+            .details-block__tagline{
+                font-size: 40px;
+                font-weight: 600;
+                @media (max-width: 576px) { 
+                    font-size: 30px;
+                }
+            }
+            .details-block__overview{
+                width: 50%;  
+                @media (max-width: 992px) { 
+                    width: 95%;
+                }
+            }
+        }
+        .poster-block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 5% 40px 0px ;
+            height:600px;
+            &>img{
+                height:95%;
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                @media (max-width: 576px) { 
+                    height: 70%;
+                }
+            }
+            &>div{
+                margin: 10px;
+            }
+            @media (max-width: 992px) { 
+                margin: auto;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .prod-companies-container{
+        border-top: solid black 2px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .company-block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            margin: 15px;
+            &>img{
+                height: 60%;
+            }
+        }
+    }
+}

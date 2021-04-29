@@ -1,0 +1,88 @@
+@import "../styles/fonts.scss";
+.container{
+  display: flex;
+  flex-direction: column;
+  .form-block{
+    display: flex;
+    align-self: center;
+    margin-top: 20px;
+    box-shadow: 0px 0px 3px 1px rgba(34, 60, 80, 0.2) inset;
+    border-radius: 10px;
+    overflow: hidden;
+    .form-block__input{
+      padding: 10px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #fff;
+      outline: none; 
+      font-size: 15px;
+      @include releway-font;
+    }
+    .form-block__button{
+      appearance: none;
+      border: 0;
+      background: #6DC8BF;
+      color: #fff;
+      padding: 10px 16px;
+      font-size: 16px;
+      transition: all 0.1s ease;
+      &:active{
+        background: #499991;
+      }
+    }
+  }
+
+  .list-block{
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    .list-block__empty{
+      @include releway-font;
+      margin-top:40px;
+    }
+    .item-block{
+      width: 20%;
+      margin: 30px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.7s ease;
+      max-height: 300px;
+      overflow: hidden;
+        &:hover{
+          box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+          max-height: 1200px;
+        }
+        @media (max-width: 992px) { 
+          width: 40%;
+         }
+        @media (max-width: 576px) { 
+          width: 70%;
+         }
+      .item-block__title{
+        text-align: center;
+        @include releway-font;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px;
+        &>a:active,a:hover,a{
+          text-decoration: none;
+          color: black;
+        }
+      }
+      .item-block__img{
+        width: 100%;
+      }
+      .item-block__description{
+        padding: 15px;
+      }
+      .item-block__release,
+      .item-block__popularity
+      {
+        padding: 10px;
+        @include roboto-font;
+      }
+    }
+  }
+}

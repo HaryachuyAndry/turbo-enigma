@@ -1,0 +1,14 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto");
+@import url("https://db.onlinewebfonts.com/c/000833a3a58fb083c44b9de42c2ff0a2?family=Gilroy+SemiBold");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+
+@mixin gilroy-semibold-font {
+  font-family: "Gilroy-SemiBold", sans-serif;
+}
+@mixin releway-font {
+  font-family: "Raleway", sans-serif;
+}
+@mixin roboto-font {
+  font-family: "Roboto", sans-serif;
+}
