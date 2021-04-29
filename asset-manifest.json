@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/turbo-enigma/static/css/main.758fa647.chunk.css",
+    "main.js": "/turbo-enigma/static/js/main.865dff11.chunk.js",
+    "main.js.map": "/turbo-enigma/static/js/main.865dff11.chunk.js.map",
+    "runtime-main.js": "/turbo-enigma/static/js/runtime-main.14c4d954.js",
+    "runtime-main.js.map": "/turbo-enigma/static/js/runtime-main.14c4d954.js.map",
+    "static/js/2.5ea16cd9.chunk.js": "/turbo-enigma/static/js/2.5ea16cd9.chunk.js",
+    "static/js/2.5ea16cd9.chunk.js.map": "/turbo-enigma/static/js/2.5ea16cd9.chunk.js.map",
+    "static/js/3.d55d6c09.chunk.js": "/turbo-enigma/static/js/3.d55d6c09.chunk.js",
+    "static/js/3.d55d6c09.chunk.js.map": "/turbo-enigma/static/js/3.d55d6c09.chunk.js.map",
+    "index.html": "/turbo-enigma/index.html",
+    "static/css/main.758fa647.chunk.css.map": "/turbo-enigma/static/css/main.758fa647.chunk.css.map",
+    "static/js/2.5ea16cd9.chunk.js.LICENSE.txt": "/turbo-enigma/static/js/2.5ea16cd9.chunk.js.LICENSE.txt",
+    "static/media/head-img.910043ad.png": "/turbo-enigma/static/media/head-img.910043ad.png",
+    "static/media/logo.f58b3435.png": "/turbo-enigma/static/media/logo.f58b3435.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.14c4d954.js",
+    "static/js/2.5ea16cd9.chunk.js",
+    "static/css/main.758fa647.chunk.css",
+    "static/js/main.865dff11.chunk.js"
+  ]
+}
