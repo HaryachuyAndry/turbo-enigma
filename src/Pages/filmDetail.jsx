@@ -16,7 +16,7 @@ const FilmDetail = () => {
         setDataMovie(response.data)
     }
 
-    useEffect(() => { fetchData() }, [])
+    useEffect(() => { fetchData() })
 
     console.log(dataMovie)
 
