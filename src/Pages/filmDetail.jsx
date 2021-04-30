@@ -18,8 +18,6 @@ const FilmDetail = () => {
 
     useEffect(() => { fetchData() })
 
-    console.log(dataMovie)
-
     return (
         <div className="film-detail-container">
             <div className="film-detail-block">

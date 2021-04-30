@@ -20,16 +20,14 @@ function TitlePage() {
     const location = useLocation();
 
     const search = new URLSearchParams(location.search).get('search')
-    console.log(search)
-    const fetchMovie = async () => {
-        if (!search) return;
-        const response = await getSearchMovies({ query: search })
-        setDataMovieList(response.data)
-    }
 
-    useEffect(() => { fetchMovie() }, [search])
-
-    console.log(dataMovieList)
+    useEffect(() => {
+        (async () => {
+            if (!search) return;
+            const response = await getSearchMovies({ query: search })
+            setDataMovieList(response.data)
+        })()
+    }, [search])
 
     return (
         <div className="container" >
