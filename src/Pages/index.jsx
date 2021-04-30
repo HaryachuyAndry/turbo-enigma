@@ -47,7 +47,7 @@ function TitlePage() {
                     return (
                         <div key={index} className="item-block">
                             <div className="item-block__title"><Link to={`/films/${item.id}`}><div className="elem">{item.title} </div></Link></div>
-                            <img className="item-block__img" src={`https://image.tmdb.org/t/p/w500${item.backdrop_path}`} alt="" />
+                            <Link to={`/films/${item.id}`}><img className="item-block__img" src={`https://image.tmdb.org/t/p/w500${item.backdrop_path}`} alt="" /></Link>
                             <div className="item-block__description">{item.overview} </div>
                             <div className="item-block__popularity"> Popularity {item.popularity} </div>
                             <div className="item-block__release"> Date release: {item.release_date} </div>
