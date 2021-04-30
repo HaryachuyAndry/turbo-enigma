@@ -39,6 +39,10 @@
                     font-size: 30px;
                 }
             }
+            .details-block__homepage{
+                max-width: 90%;
+                word-wrap: break-word;
+            }
             .details-block__overview{
                 width: 50%;  
                 @media (max-width: 992px) { 
@@ -82,7 +86,10 @@
             height: 100px;
             margin: 15px;
             &>img{
-                height: 60%;
+                height: 50%;
+                @media (max-width: 992px) { 
+                    max-width: 90%;
+                }
             }
         }
     }
